@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Lectio",
+  "description": "Save links to read later",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_icon": "images/lectio-64.png"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "*://*.rhcloud.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
